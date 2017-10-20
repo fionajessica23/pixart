@@ -11,3 +11,12 @@ $setColorBtn.on('click', function() {
   $brushId.css("background", newColorValue)
 
 });
+
+
+$(document).ready(function () {
+  var $newdiv;
+  for (var i = 0; i < 1000; i++) {
+    $newdiv = $('<div class="square">');
+    $('body').append($newdiv);
+  }
+});
