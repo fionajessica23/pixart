@@ -2,6 +2,7 @@ var $setColorBtn = $('#set-color');
 var $colorField = $('#color-field');
 var $brushId = $('#brush-id')
 
+
 $setColorBtn.on('click', function() {
   event.preventDefault();
 
