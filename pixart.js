@@ -7,7 +7,7 @@ $setColorBtn.on('click', function() {
 
   var newColorValue = $colorField.val();
   console.log(newColorValue);
-  $brushId.css("background", newColorValue)
+  $brushId.css("background-color", newColorValue)
 });
 
 $(document).ready(function () {
@@ -16,10 +16,11 @@ $(document).ready(function () {
     $newdiv = $('<div class="square">');
     $('body').append($newdiv);
   }
-  $('.square').on('click', function(event) {
+  $('.square').on('mouseover', function(event) {
     var $clickedSquare = $(event.target);
-    // $clickedSquare.css("background", "green")
-    var $brushColor = $('.brush').css("background");
-    $clickedSquare.css("background", $brushColor);
+    // $clickedSquare.css("background-color", "green")
+    var $brushColor = $('.brush').css("background-color");
+    $clickedSquare.css("background-color", $brushColor);
+    $clickedSquare.css({"height": "10px", "width": "10px", "margin": "0"});
   });
 });
