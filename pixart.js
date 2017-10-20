@@ -8,7 +8,6 @@ $setColorBtn.on('click', function() {
   var newColorValue = $colorField.val();
   console.log(newColorValue);
   $brushId.css("background", newColorValue)
-
 });
 
 $(document).ready(function () {
@@ -19,6 +18,8 @@ $(document).ready(function () {
   }
   $('.square').on('click', function(event) {
     var $clickedSquare = $(event.target);
-    $clickedSquare.css("background", "green")
+    // $clickedSquare.css("background", "green")
+    var $brushColor = $('.brush').css("background");
+    $clickedSquare.css("background", $brushColor);
   });
 });
