@@ -9,9 +9,24 @@
   <h1>Pixel Art!</h1>
   <div class="controls">
     <form id="form">
-      <input type="text" id="color-field"></input>
-      <button id="set-color">Set Color</button>
+      <div class="">
+        <input type="radio" name="selection" value="color" checked>Color
+        <input type="radio" name="selection" value="movie">Movie
+      </div>
+
+      <div class="">
+        <input type="text" name="selection-value" placeholder="input color/movie">
+      </div>
+      <!-- <input type="radio" name="selection" id="movie-input" type="text" placeholder="search movie template"> -->
+      <button id="set-template" type="button">Action!</button>
     </form>
+    <div class="">
+      <!-- <input id="movie-input" type="text" placeholder="search movie template">
+      <button id="search-movie-btn" type="button">search</button> -->
+      <div class="results">
+
+      </div>
+    </div>
     <div id="brush-id" class="brush"></div>
   </div>
   <script src="http://underscorejs.org/underscore.js"></script>
